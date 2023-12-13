@@ -1,22 +1,8 @@
-/*
-переменные:
-let название = "значение"  (все пременные которые могут меняться, const это неизменная переменная, которая не будет меняться)
-let str = "hello"
+function submitForm() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    let message = document.getElementById('message').value;
 
-const bool = true
-
-Команда для вывода данных вне браузера
-console.log(...);
-
-
-//типы данных простые:
-let num =123;
-
-
-
-*/
-
-let num =123; //число
-const bool = "Привет";
-console.log('num', typeof(num))
-let string = "Михаил";
+    document.getElementById('contactForm').reset();
+}
